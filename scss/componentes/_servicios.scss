@@ -1,0 +1,106 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// nav
+nav {
+  .nav-link {
+    color: $colorBlanco;
+    text-decoration: none;
+    &:hover {
+      color: $colorNegro ;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+  li {
+    display: inline-block;
+    margin: 5px 15px;
+    font-size: nth($allSize, 3);
+  }
+}
+// cuerpo
+.fondoCeleste {
+  background-color: $colorFondo;
+}
+
+.encabezado {
+  @extend %fondo2;
+  background-image: url(../img/banner.jpg);
+
+  .titulo2 {
+    color: $colorBlanco;
+    font-size: nth($allSize, 8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-left: nth($allSize, 7)
+  }
+  p {
+    color: $colorNegro;
+    font-size: nth($allSize, 9);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    margin-left: nth($allSize, 11);
+    line-height: nth($allSize, 10);
+    margin-bottom: nth($allSize, 11);
+  }
+}
+
+.servicios {
+  h2 {
+    color: $colorGinmo;
+    font-size: nth($allSize, 2);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: start;
+    margin-left: nth($allSize, 2);
+    text-decoration-line: underline;
+    padding: 2rem;
+  }
+  p{
+    color: $colorNegro;
+    font-size:nth($allSize, 1);
+    margin-left: nth($allSize, 1);
+  }
+}
+
+.btn.btn-primary {
+  background-color: $VerdeClaro;
+  border-color: map-get( $boton ,bordes);
+  margin: map-get( $boton ,margen);
+  margin-bottom: 10rem;
+
+  a {
+    font-size: nth($allSize, 5);
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: $colorNegro;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+  &:hover {
+    background-color: $VerdeClaro;
+    border: 5px;
+    color: $colorNegro;
+    transform: scale(1.2);
+    transition: all 1s;
+  }
+
+  border-radius: 2%
+}
+
+@media screen and (max-width: 768px) {
+  .logo1 {
+    align-items: center;
+  }
+
+  iframe {
+    display: none;
+  }
+
+}

@@ -1,0 +1,102 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fondoCeleste {
+    Background-color: $colorFondo
+}
+.encabezado {
+    @extend %fondo2;
+    background-image: url(../img/banner.jpg);
+}
+// nav 
+nav{
+    .nav-link {
+      color: $ColorParrafoPie;
+      text-decoration: none;
+      &:hover{
+      color: $colorNegro ;
+      font-weight: bold;
+      text-decoration: underline;
+      }
+    } 
+    li{
+      display: inline-block;
+      margin: 5px 15px;
+      font-size: nth($allSize, 3);  
+    }
+    }
+@mixin contacto{
+}
+@mixin fondo {
+}
+// footer 
+footer{
+    background-color: $colorPie ;
+    height: nth($tamanoAlto, 3);
+    .container-body {
+        display: flex;
+    }
+    }
+  .columna1 {
+        width: nth($tamanoAncho, 3);
+        padding-left: 50px;
+  h2 {
+        color: $colorContenedores;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: nth($allSize, 2);
+    }
+  p {
+        color: $ColorParrafoPie;
+        font-size: nth($allSize, 5);
+        margin-top: nth($allSize, 3);
+        justify-content: left;
+        font-style: oblique;
+        text-align: justify;
+    }
+  }
+  .columnaContacto {
+        width: nth($tamanoAncho, 3);
+        padding-left: 100px;
+  h2 {
+        color: $ColorParrafoPie;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: nth($allSize, 2);
+    }
+  li{
+    color: $ColorParrafoPie;
+    margin-top: 1rem;
+    display: flex;
+    font-size: nth($allSize, 5);
+  }
+  i{
+    width: nth($tamanoAncho, 4);
+    height: 3rem;
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+  }
+  .columna3{
+    width: nth($tamanoAncho, 3);
+    justify-content: end;
+    padding-left: 80px; 
+  iframe{
+        justify-content: end;
+        padding-left: nth($allSize, 6);
+        width: fit-content;
+        margin-top: nth($allSize, 2);
+    }
+  }
+  @media screen and (max-width: 768px){
+  .logo1{
+    align-items: center;
+  }
+  iframe{
+    display: none;
+  }
+  }

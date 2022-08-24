@@ -1,0 +1,82 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.fondoCeleste {
+    background-color: $colorFondo;
+ }
+ h1{
+  color: $colorContenedores;
+  font-size: nth($allSize,2 );
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: oblique;
+  text-align: center;
+  text-shadow: $colorBlanco 2px;
+}
+ .fondoalqui{
+    background-image: url(../img/barra\ colores.jpg);
+    @extend %fondo;
+ }
+ nav{
+    .nav-link {
+      color: $ColorParrafoPie;
+      text-decoration: none;
+      &:hover{
+      color: $colorNegro ;
+      font-weight: bold;
+      text-decoration: underline;
+      }
+    } 
+    li{
+      display: inline-block;
+      margin: 5px 15px;
+      font-size: nth($allSize, 3);  
+    }
+    }
+    // imagenes
+    .container2 {
+        background-color: $colorContenedores;
+        margin: 2rem 10rem;
+        text-align: center;
+        padding: 2rem 0 1rem 0;
+        border-radius: 10%;
+        .info{
+        background-color: #9a9c8f;
+        display: inline-block;
+        border-style: groove;
+        border-color: $colorContenedores;
+        margin: 1rem;
+        padding: 1rem;
+        }
+        h3{
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: nth($allSize, 2);
+        color: $ColorParrafoPie;
+        }
+        .titulo{
+            font-size: nth($allSize, 7 );
+        }
+    }
+    .container2 img:hover{
+      transform:scale(1.2) ;
+      transition: transform 1s; 
+      border: solid;
+      border-color: $colorNegro;
+  }
+    @media screen and (max-width: 768px){
+        .logo1{
+          align-items: center;
+          width: 3rem;
+          height: auto;
+        }
+        iframe{
+          display: none;
+        }
+        h1{
+          color: $colorNegro;
+        }
+        }
