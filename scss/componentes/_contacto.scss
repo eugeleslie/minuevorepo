@@ -1,7 +1,6 @@
 html {
     font-size: 62.5%;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -10,27 +9,53 @@ html {
 .fondoCeleste {
     Background-color: $colorFondo
 }
-.encabezado {
+header {
     @extend %fondo2;
     background-image: url(../img/banner.jpg);
+    height: 50rem;
+    .titulo2{
+      margin: 5rem;
+    }
 }
+.contacto{
+  background-color: $colorPie;
+  margin: 10rem;
+  color: $colorNegro;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-style: oblique;
+  line-height: 35px;
+  list-style: none;
+  display: block;
+   a{
+    text-decoration: none;
+    color: $colorGinmo;
+    }
+  }
+  iframe{
+ justify-content: center;
+ margin-bottom: 1rem;
+  }
 // nav 
-nav{
-    .nav-link {
-      color: $ColorParrafoPie;
-      text-decoration: none;
-      &:hover{
+nav {
+  .nav-link {
+    color: $colorBlanco;
+    text-decoration: none;
+    &:hover {
       color: $colorNegro ;
       font-weight: bold;
       text-decoration: underline;
-      }
-    } 
-    li{
-      display: inline-block;
-      margin: 5px 15px;
-      font-size: nth($allSize, 3);  
     }
-    }
+  }
+  li {
+    display: inline-block;
+    margin: 5px 15px;
+    font-size: nth($allSize, 3);
+  }
+}
 @mixin contacto{
 }
 @mixin fondo {

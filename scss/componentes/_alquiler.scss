@@ -51,12 +51,12 @@ html {
         border-color: $colorContenedores;
         margin: 1rem;
         padding: 1rem;
-        }
         h3{
           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: nth($allSize, 2);
+        font-size: 2.5rem;
         color: $ColorParrafoPie;
         }
+      }
         .titulo{
             font-size: nth($allSize, 7 );
         }

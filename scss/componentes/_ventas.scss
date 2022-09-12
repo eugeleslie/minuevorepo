@@ -7,18 +7,20 @@ html {
     padding: 0;
 }
 h1{
-  color: $colorContenedores;
+  color: $colorBlanco;
   font-size: nth($allSize,2 );
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-style: oblique;
   text-align: center;
-  text-shadow: $colorBlanco 2px;
+  text-shadow: 0 0 2px #0000;
+  opacity: 1;
 }
 .fondoCeleste {
    background-color: $colorFondo;
 }
 // nav
 nav{
+  
     .nav-link {
       color: $ColorParrafoPie;
       text-decoration: none;
@@ -33,6 +35,7 @@ nav{
       margin: 5px 15px;
       font-size: nth($allSize, 3);  
     }
+    overflow-x: hidden
     }
     // imagenes
     .container2 {
@@ -40,20 +43,20 @@ nav{
       margin: 2rem 10rem;
       text-align: center;
       padding: 2rem 0 1rem 0;
-      border-radius: 10%;
+      border-radius: 5%;
       .info{
-        background-color: #9a9c8f;
+      background-color: #9a9c8f;
       display: inline-block;
       border-style: groove;
       border-color: $colorContenedores;
       margin: 1rem;
       padding: 1rem;
-      }
       h3{
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: nth($allSize, 2);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 2rem;
       color: $ColorParrafoPie;
       }
+    }
   }
   .container2 img:hover{
     transform:scale(1.2) ;
@@ -68,6 +71,7 @@ footer{
   .container-body {
       display: flex;
   }
+  overflow-x: hidden
   }
 .columna1 {
       width: nth($tamanoAncho, 3);
@@ -125,5 +129,7 @@ iframe{
   iframe{
     display: none;
   }
-  
+  nav{
+    text-align: start;
+  }
   }

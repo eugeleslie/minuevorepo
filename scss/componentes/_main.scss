@@ -62,13 +62,17 @@ li{
   padding: nth($allSize, 1);
   margin-bottom: nth($allSize, 1);
   border-style: groove;
-}
+ }
 .carousel-caption.d-none.d-md-block {
   font-size: nth($allSize, 3);
 h5{
   font-size: nth($allSize, 1);
   text-decoration: underline;
   font-style: oblique;
+  color: $colorBlanco;
+}
+p{
+  color: $colorBlanco;
 }
 }
 // footer 
